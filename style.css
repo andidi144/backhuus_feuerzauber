@@ -1,0 +1,353 @@
+/* General styles */
+* {
+    font-family: 'Roboto Slab', serif !important;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    padding: 50px;
+    background-color: inherit;  
+    position: relative;
+}
+
+.section {
+    overflow-x: hidden;
+    padding: 60px;
+    background-color: inherit;
+}
+
+.section p {
+    font-size: 18px;
+}
+
+p {
+    line-height: 1.5em;
+}
+/* ************************************************************************ */
+
+
+/* Navigation */
+nav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -250px;
+    overflow: hidden;
+    padding-top: 60px;
+    transition: all linear 0.4s;
+}
+
+nav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+}
+
+
+@media screen and (max-height: 450px) {
+    nav {
+        padding-top: 15px;
+    }
+    nav a {
+        font-size: 18px;
+    }
+}
+
+#openbtn {
+    left: 0;
+    position: fixed;
+    transition: all linear 0.4s;
+    z-index: 100;
+    font-size: 40px;
+    cursor: pointer;
+    margin: 10px 20px;
+}
+
+#closebtn {
+    margin: 15px 25px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 40px;
+    margin-left: 50px;
+}
+
+#slide {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all linear 0.4s;
+}
+/* ************************************************************************ */
+
+
+/* Themes */
+.theme-black, #picker-black {
+    color: white;
+    background-color: #444;
+    transition: all linear 0.4s;
+}
+.theme-white, #picker-white {
+    color: #333;
+    background-color: white;
+    transition: all linear 0.4s;
+}
+
+
+.theme-black nav {
+    background-color: #111;
+}
+.theme-white nav {
+    background-color: #eee;
+}
+
+.theme-black h1 {
+    text-shadow:
+        -0.8px -0.8px 0 black,  
+        0.8px -0.8px 0 black,
+        -0.8px 0.8px 0 black,
+        0.8px 0.8px 0 black;
+}
+
+.theme-black h2 {
+    text-shadow:
+        -0.5px -0.5px 0 black,  
+        0.5px -0.5px 0 black,
+        -0.5px 0.5px 0 black,
+        0.5px 0.5px 0 black;
+}
+
+.theme-white h1 {
+    text-shadow:
+        -0.5px -0.5px 0 white,  
+        0.5px -0.5px 0 white,
+        -0.5px 0.5px 0 white,
+        0.5px 0.5px 0 white;
+}
+
+
+.theme-black nav a, .theme-black #closebtn {
+    color: #818181;
+}
+.theme-white nav a, .theme-white #closebtn {
+    color: #bbb;
+}
+
+
+.theme-black nav a:hover, .theme-black nav a:focus, .theme-black #closebtn:hover, .theme-black nav a.active {
+    color: #f1f1f1;
+}
+.theme-white nav a:hover, .theme-white nav a:focus, .theme-white #closebtn:hover, .theme-white nav a.active {
+    color: #555;
+}
+
+/* ************************************************************************ */
+
+
+/* Profile-Card for Social Media */
+.profile-section {
+    overflow-x: hidden;
+    background-color: inherit;
+    padding: 20px;
+}
+
+.profile-card {
+    position: relative;
+    color: #333;
+    background-color: white;
+    width: 700px;
+    height: 500px;
+    max-width: 100%;
+    box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.5);
+    margin: auto;
+    overflow: hidden;
+    border-radius: 2px; 
+    text-align: center;
+}
+
+.profile-card-header {
+    background-image: url("images/cardHeader.jpg");
+    filter: blur(3px);
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    height: 250px;
+    background-position: center;
+}
+
+.card-title {
+    position: relative;
+    margin: auto;
+    display: block;
+    top: 50px;
+    font-size: 30px;
+    text-shadow:
+        -0.5px -0.5px 0 white,  
+        0.5px -0.5px 0 white,
+        -0.5px 0.5px 0 white,
+        0.5px 0.5px 0 white;
+}
+
+.card-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 200px;
+    background-color: white;
+    border-top: black solid 10px;
+}
+
+.profile-card img {
+    position: relative;
+    top: -90px;
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+    height: 150px;
+    width: 150px;
+    border: black solid 10px;
+}
+
+.followme {
+    position: relative;
+    bottom: 50px;
+    font-size: 25px;
+}
+
+.social-media-container {
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    bottom: 40px;
+    height: 60px;
+    display: flex;
+}
+
+.social-media {
+    max-width: 60px;
+    width: 15%;
+    height: 100%;
+    display: block;
+    float: left;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    margin: auto;
+}
+
+.social-media:hover {
+    filter: sepia(1);
+}
+
+.facebook {
+    background-image: url("images/socialmedia/facebook.svg");
+}
+
+.instagram {
+    background-image: url("images/socialmedia/instagram.svg");
+}
+
+.twitter {
+    background-image: url("images/socialmedia/twitter.svg");
+}
+
+.googleplus {
+    background-image: url("images/socialmedia/googleplus.svg");
+}
+
+.email {
+    background-image: url("images/socialmedia/email.svg");
+}
+/* ************************************************************************ */
+
+
+/* Parallax */
+.parallax {
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;    
+}
+
+#parallax-1 {
+    background-image: url("images/parallax1.jpg");
+}
+#parallax-2 {
+    background-image: url("images/parallax2.jpg");
+    height: 50%;
+}
+#parallax-3 {
+    background-image: url("images/parallax3.jpg");
+    height: 50%;
+}
+
+#parallax-404 {
+    background-image: url("images/404.jpg");
+}
+
+.parallax a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.parallax-title a.parallax-link {
+    background-color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+    padding: 10px 15px;
+    color: white;
+    text-align: center;
+    border: solid white 1px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.parallax-title {
+    margin: auto;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%)
+}
+
+.parallax-title h1 {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 50px;
+    margin: 0 20px 10px 20px;
+}
+
+.parallax-title h2 {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 25px;
+    font-weight: lighter;
+    margin: 0 20px 30px 20px;
+}
+/* ************************************************************************ */

@@ -43,6 +43,11 @@ footer {
 p {
     line-height: 1.5em;
 }
+
+#section-kontakt {
+    height: 100%;
+}
+
 /* ************************************************************************ */
 
 
@@ -64,6 +69,10 @@ nav a {
     text-decoration: none;
     font-size: 25px;
     display: block;
+}
+
+.subsite {
+    margin-left: 10px; 
 }
 
 
@@ -166,125 +175,7 @@ nav a {
     color: #555;
 }
 
-/* ************************************************************************ */
 
-
-/* Profile-Card for Social Media */
-.profile-section {
-    overflow-x: hidden;
-    background-color: inherit;
-    padding: 20px;
-}
-
-.profile-card {
-    position: relative;
-    color: #333;
-    background-color: white;
-    width: 700px;
-    height: 500px;
-    max-width: 100%;
-    box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.5);
-    margin: auto;
-    overflow: hidden;
-    border-radius: 2px; 
-    text-align: center;
-}
-
-.profile-card-header {
-    background-image: url("images/cardHeader.jpg");
-    filter: blur(3px);
-    position: absolute;
-    top: -20px;
-    left: -20px;
-    right: -20px;
-    height: 250px;
-    background-position: center;
-}
-
-.card-title {
-    position: relative;
-    margin: auto;
-    display: block;
-    top: 50px;
-    font-size: 30px;
-    text-shadow:
-        -0.5px -0.5px 0 white,  
-        0.5px -0.5px 0 white,
-        -0.5px 0.5px 0 white,
-        0.5px 0.5px 0 white;
-}
-
-.card-content {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 200px;
-    background-color: white;
-    border-top: black solid 10px;
-}
-
-.profile-card img {
-    position: relative;
-    top: -90px;
-    border-radius: 50%;
-    margin: auto;
-    display: block;
-    height: 150px;
-    width: 150px;
-    border: black solid 10px;
-}
-
-.followme {
-    position: relative;
-    bottom: 50px;
-    font-size: 25px;
-}
-
-.social-media-container {
-    position: absolute;
-    left: 10%;
-    right: 10%;
-    bottom: 40px;
-    height: 60px;
-    display: flex;
-}
-
-.social-media {
-    max-width: 60px;
-    width: 15%;
-    height: 100%;
-    display: block;
-    float: left;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position-y: 50%;
-    margin: auto;
-}
-
-.social-media:hover {
-    filter: sepia(1);
-}
-
-.facebook {
-    background-image: url("images/socialmedia/facebook.svg");
-}
-
-.instagram {
-    background-image: url("images/socialmedia/instagram.svg");
-}
-
-.twitter {
-    background-image: url("images/socialmedia/twitter.svg");
-}
-
-.googleplus {
-    background-image: url("images/socialmedia/googleplus.svg");
-}
-
-.email {
-    background-image: url("images/socialmedia/email.svg");
-}
 /* ************************************************************************ */
 
 
@@ -351,3 +242,58 @@ nav a {
     margin: 0 20px 30px 20px;
 }
 /* ************************************************************************ */
+
+/* Kontakt-Form */
+
+form {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+form input{
+    height: 30px;
+    border-radius: 2px;
+    font-size: 15px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 5px 10px;
+    margin: 3px;
+}
+
+.form-group {
+    margin: 40px 10px;
+}
+
+textarea {
+    width: 100%;
+    border-radius: 2px;
+    font-size: 15px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 200px;
+    padding: 5px 10px;
+    margin: 3px;
+}
+
+form select {
+    height: 40px;
+    border-radius: 2px;
+    font-size: 15px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 5px 10px;
+    margin: 3px;
+    width: 215px;
+}
+
+#submit {
+    color: #818181;
+    background-color: #333;
+}
+
+#submit:hover {
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.5), 0 7px 20px 0 rgba(0, 0, 0, 0.19);
+    color: #818181;
+    background-color: #363636;
+}

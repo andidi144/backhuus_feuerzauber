@@ -1,7 +1,30 @@
 /* General styles */
-* {
-    font-family: 'Roboto Slab', serif !important;
+@font-face {
+    font-family: "BLKCHCRY";
+    src: url("fonts/BLKCHCRY.ttf");
 }
+@font-face {
+    font-family: "dragonwick";
+    src: url("fonts/dragonwick-fg.ttf");
+}
+@font-face {
+    font-family: "gothenburg";
+    src: url("fonts/GothenburgFraktur.ttf");
+}
+@font-face {
+    font-family: "medici";
+    src: url("fonts/Medici.ttf");
+}
+@font-face {
+    font-family: "lohengrin";
+    src: url("fonts/Lohengrin.ttf");
+}
+
+* {
+    font-family: 'Roboto Slab', serif;
+}
+
+
 
 html {
     height: 100%;
@@ -45,7 +68,12 @@ p {
 }
 
 #section-kontakt {
-    height: 100%;
+    background-image: url("images/kohle.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* ************************************************************************ */
@@ -118,7 +146,7 @@ nav a {
 /* Themes */
 .theme-black, #picker-black {
     color: white;
-    background-color: #444;
+    background-color: #111;
     transition: all linear 0.4s;
 }
 .theme-white, #picker-white {
@@ -129,7 +157,7 @@ nav a {
 
 
 .theme-black nav {
-    background-color: #111;
+    background-color: #0a0a0a;
 }
 .theme-white nav {
     background-color: #eee;
@@ -190,7 +218,7 @@ nav a {
 }
 
 #parallax-1 {
-    background-image: url("images/parallax1.jpg");
+    background-image: url("images/kohle.jpg");
 }
 #parallax-2 {
     background-image: url("images/parallax2.jpg");
@@ -230,8 +258,8 @@ nav a {
 }
 
 .parallax-title h1 {
-    font-family: 'Source Serif Pro', serif;
-    font-size: 50px;
+    font-family: lohengrin;
+    font-size: 100px;
     margin: 0 20px 10px 20px;
 }
 
@@ -246,9 +274,18 @@ nav a {
 /* Kontakt-Form */
 
 form {
-    position: absolute;
+    border-radius: 2px;
+    width: 40%;
+    position: relative;
     left: 50%;
     transform: translate(-50%, 0);
+    background-color: rgba(20, 20, 20, 0.8);
+    /*background-image: url("images/kohle.jpg");*/
+    padding: 100px;
+}
+
+form h2 {
+    margin: 15px;
 }
 
 form input{
@@ -297,3 +334,7 @@ form select {
     color: #818181;
     background-color: #363636;
 }
+
+
+/* Fonts */
+

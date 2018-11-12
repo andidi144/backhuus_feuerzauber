@@ -6,7 +6,7 @@ error_reporting(E_ALL);
 if(isset($_POST["submit"])) {
     
     $to = "info@backhuus-feuerzauber.ch";
-    $to = "adrianbetschart@hotmail.ch";
+    // $to = "adrianbetschart@hotmail.ch";
     $subject = $_POST["betreffselect"] . ": " .  $_POST["betreff"];
     $message = "Von: " . $_POST["vorname"] . " " . $_POST["nachname"] . "<br/>Email: " . $_POST["email"] . "<br/>Telefon: " . $_POST["telefon"] . "<br/><br/>Mitteilung:<br/><br/>" . $_POST["mitteilung"] . "<br/>";
     $headers = "Content-Type: text/html;charset=utf-8\r\nFrom:backhuus-feuerzauber\r\nReply-to:" . $_POST["email"];

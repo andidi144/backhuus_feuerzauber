@@ -52,11 +52,38 @@ main {
 }
 
 footer {
-    padding: 50px;
     font-size: 1.2em;
     background-color: inherit;  
     position: relative;
+    padding: 50px;
+    color: #818181;
 }
+
+footer a {
+    text-decoration: none;
+    color: #818181;
+}
+
+footer a:hover {
+    color: #f1f1f1;
+}
+
+footer a img {
+    filter: brightness(50%);
+}
+
+footer a:hover img {
+    filter: brightness(90%);
+}
+
+footer a.socialmedia {
+    float: right;
+}
+
+footer a img {
+    height: 30px;
+}
+
 
 .section {
     overflow-x: hidden;
@@ -79,6 +106,9 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    min-height: 100vh;
+    box-sizing: border-box;
 }
 
 /* ************************************************************************ */
@@ -272,6 +302,7 @@ nav a {
     font-family: lohengrin;
     font-size: 7em;
     margin: 0 20px 10px 20px;
+    line-height: 1em;
 }
 
 @media screen and (max-width: 600px) {
@@ -287,6 +318,7 @@ h1 {
 .parallax-title h2 {
     font-family: gabriola, serif;
     font-size: 3em;
+    line-height: 1em;
     font-weight: lighter;
     margin: 0 20px 30px 20px;
 }
@@ -296,19 +328,19 @@ h1 {
 
 form {
     border-radius: 2px;
-    width: 40%;
+    width: 90%;
+    max-width: 700px;
     position: relative;
     left: 50%;
     transform: translate(-50%, 0);
     background-color: rgba(20, 20, 20, 0.8);
-    /*background-image: url("images/kohle.jpg");*/
     padding: 100px;
 }
 
 form h1 {
-
     font-size: 2em;
-    margin: 15px;
+    left: 5%;
+    position: relative;
 }
 
 form input{
@@ -318,24 +350,26 @@ form input{
     border: none;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 5px 10px;
+    width: calc(50% - 30px);
     margin: 3px;
-    width: calc(50% - 28px);
-    max-width: 300px;
 }
 
 .form-group {
-    margin: 40px 10px;
+    width: 90%;
+    left: 5%;
+    margin: 10px 0;
+    position: relative;
 }
 
 textarea {
-    width: calc(100% - 28px);
+    width: calc(100% - 20px);
     border-radius: 2px;
     font-size: 1.2em;
     border: none;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     height: 200px;
     padding: 5px 10px;
-    margin: 3px;
+    margin: 3px 0;
 }
 
 form select {
@@ -344,10 +378,9 @@ form select {
     font-size: 1.2em;
     border: none;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 5px 20px 5px 10px;
+    padding: 5px 10px 5px 10px;
+    width: calc(50% - 10px);
     margin: 3px;
-    width: calc(50% - 8px);
-    max-width: 300px;
 }
 
 #submit {
@@ -368,7 +401,67 @@ form select {
     background-color: #bbb;
 }
 
-@media screen and (max-width: 1200px) and (min-width: 801px) {
+.success {
+    font-size: 1.3em;
+    width: calc(100% - 20px);
+    margin: 3px;
+    padding: 5px 10px 5px 10px;
+    background-color: green;
+    border-radius: 3px;
+}
+
+@media screen and (max-width: 600px) {
+    form input{
+        width: calc(100% - 20px);
+    }
+
+    form select {
+        width: 100%;
+    }
+
+    textarea {
+        width: calc(100% - 20px);
+    }
+
+    #section-kontakt {
+        padding: 0;
+    }
+
+    form {
+        padding: 40px 10px;
+        width: 100%;
+    }
+
+    div.section div.impressum {
+        padding: 40px 10px;
+        width: 100%;
+    }
+}
+
+div.section div.impressum {
+    border-radius: 2px;
+    width: 90%;
+    max-width: 700px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: rgba(20, 20, 20, 0.8);
+    padding: 100px;
+}
+
+div.section div.impressum h1 {
+    font-size: 2em;
+    left: 5%;
+    position: relative;
+}
+
+div.section div.impressum address {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
+/* @media screen and (max-width: 1200px) and (min-width: 801px) {
     form select {
         width: 100%;
     }
@@ -404,7 +497,7 @@ form select {
     form select {
         width: 100%;
     }
-}
+} */
 
 /* Fonts */
 

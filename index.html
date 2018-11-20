@@ -6,6 +6,15 @@
     <meta name="author" content="Adrian Betschart">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#111111">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#111111">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#111111">
+
+
+    <link rel="icon" type="image/png" href="/images/favicon.png">
 
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 
@@ -19,12 +28,12 @@
   <body class="theme-black">
       <nav id="mySidenav">
           <span id="closebtn" onclick="openNav()">&times;</span>
-          <a href="index.html" class="active">Home</a>
+          <a href="/" class="active">Home</a>
           <a href="#section1" class="subsite">Über uns</a>
           <a href="#section2" class="subsite">Angebot</a>
           <!-- <a href="galerie.html">Galerie</a>
           <a href="events.html">Events</a> -->
-          <a href="kontakt.php">Kontakt</a>
+          <a href="/kontakt">Kontakt</a>
       </nav>
     <span id="openbtn" onclick="openNav()">&#9776</span>
     <div id="slide">
@@ -39,8 +48,8 @@
           <h2>Über uns</h2>
           <p>
             Wir haben unsere Geschäftstätigkeit im Sommer 2018 aufgenommen. 
-            </p>
-<p>
+          </p>
+          <p>
             Der Geschäftsführer René Karner ist gelernter Bäcker-Konditor mit langjähriger Erfahrung. 
           </p>
           <p>
@@ -71,7 +80,9 @@
           
         </div>
         <footer>
-          Adrian Betschart © 2018
+          <span class="adrianbetschart">Adrian Betschart © 2018</span> | 
+          <a class="impressum" href="/impressum">Impressum</a>
+          <a class="socialmedia" href="https://www.instagram.com/backhuusfeuerzauber/"><img src="./images/instagram.png" /></a>
         </footer>
       </main>
       

@@ -1,2 +1,3 @@
 Options All -Indexes
 DirectoryIndex index.php index.html index.htm
+ErrorDocument 404 /backhuus_feuerzauber/index.php

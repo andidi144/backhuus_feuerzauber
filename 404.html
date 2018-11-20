@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html lang="de">
   <head>
-
-    <meta name="keywords" content="Error,404,Backhuus,Feuerzauber">
+    <meta name="description" content="Herzlich Willkommen auf der Homepage vom Backhuus Feuerzauber.">
+    <meta name="keywords" content="Backhuus,Feuerzauber,Flammkuchen,Kontakt">
     <meta name="author" content="Adrian Betschart">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#111111">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#111111">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#111111">
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto|Source+Serif+Pro" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 
     <script async src="script.js"></script>
@@ -15,22 +24,28 @@
 
     <title>404</title>
   </head>
-  <body class="theme-white">
-    <nav id="mySidenav">
-      <span id="closebtn" onclick="openNav()">&times;</span>
-      <a href="index.html">Home</a>
-    </nav>
+  <body class="theme-black">
+      <nav id="mySidenav">
+          <span id="closebtn" onclick="openNav()">&times;</span>
+          <a href="/" class="active">Home</a>
+          <!-- <a href="galerie.html">Galerie</a>
+          <a href="events.html">Events</a> -->
+          <a href="/kontakt">Kontakt</a>
+      </nav>
     <span id="openbtn" onclick="openNav()">&#9776</span>
     <div id="slide">
       <main>
-        <div class="parallax" id="parallax-404">
+        <div class="parallax" id="parallax-1">
           <div class="parallax-title">
-              <h1>Error 404</h1>
-              <a class="parallax-link" href="index.html">Zur Home Seite</a>
+              <h1>404</h1>
+              <h2>Diese Seite existiert nicht!</h2>
+              <a href="/"><h2>Zur Startseite</h2></a>
           </div>
         </div>
         <footer>
-          Adrian Betschart © 2018
+          <span class="adrianbetschart">Adrian Betschart © 2018</span> | 
+          <a class="impressum" href="/impressum">Impressum</a>
+          <a class="socialmedia" href="https://www.instagram.com/backhuusfeuerzauber/"><img src="./images/instagram.png" /></a>
         </footer>
       </main>
       
